@@ -1,0 +1,110 @@
+*,
+*::before,
+*::after 
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+
+a 
+	color: currentColor
+	text-decoration: none
+
+a:focus,
+a:active 
+	outline: none
+
+a,
+a:visited 
+	text-decoration: none
+
+a:hover 
+	text-decoration: none
+
+nav,
+footer,
+header,
+aside 
+	display: block
+
+html,
+body 
+	height: 100%
+	width: 100%
+	font-size: 100%
+	line-height: 1
+	-ms-text-size-adjust: 100%
+	-moz-text-size-adjust: 100%
+	-webkit-text-size-adjust: 100%
+	font-family: 'Ubuntu', sans-serif // Шрифты
+	background: #e5e5e5
+
+// Отмена выделения текста
+body 
+	overflow-x: hidden
+	-webkit-touch-callout: none
+	-webkit-user-select: none
+	-khtml-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+	
+body._lock
+	overflow: hidden
+
+input,
+button,
+textarea 
+	font-family: inherit
+
+button 
+	color: currentColor
+	border: transparent
+	background: transparent
+	cursor: pointer
+
+button::-moz-focus-inner 
+	padding: 0
+	border: 0
+
+picture 
+	font-size: 0
+
+ul 
+	list-style: none
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 
+	font-weight: 400
+	font-size: inherit
+	font-weight: inherit
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button 
+	-webkit-appearance: none
+	-moz-appearance: none
+	appearance: none
+	margin: 0
+
+.visually-hidden 
+	position: absolute
+	width: 1px
+	height: 1px
+	margin: -1px
+	border: 0
+	padding: 0
+	clip: rect(0 0 0 0)
+	overflow: hidden
+
+// WRAPPER & Постановка footer к концу экрана
+.wrapper
+	min-height: 100%
+	display: flex
+	flex-direction: column
+
+main
+	flex: 1 1 auto
+

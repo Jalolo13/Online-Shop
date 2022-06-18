@@ -1,0 +1,130 @@
+
+.product-basket
+    margin-bottom: 29px
+
+.delete-from-basket
+    background: #870089
+    border: 1px solid black
+    border-radius: 5px
+    padding: 5px 10px
+    font-weight: 700
+
+.product-empty
+    text-align: center
+    
+.receipe-name
+    margin-bottom: 5px
+
+.receipe-items
+    display: flex
+
+.receipe-max
+    background: #66eb00e3
+    border: none
+    border-radius: 10px
+    color: #000
+    font-weight: 600
+    padding: 2px 10px
+
+.receipe-minus, .receipe-plus
+    width: 15px
+    height: 15px
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 50%
+    background: #66eb00e3
+    font-weight: 600
+    color: #000
+    font-size: 16px
+    margin-bottom: 10px
+
+.receipe-amount
+    margin: 0 10px
+
+.vector-basket
+    cursor: pointer
+    margin-right: 5px
+
+.basket
+    position: absolute
+    right: 75px
+    display: flex
+    align-items: center
+    
+.basket-close 
+    position: absolute
+    left: 34px
+    top: 42px
+    width: 20px
+    height: 20px
+    cursor: pointer
+    z-index: 99
+    &::before, &::after
+        position: absolute
+        left: 15px
+        content: ' '
+        height: 20px
+        width: 2px
+        background-color: #fff
+    &::before
+        transform: rotate(45deg)
+    &::after
+        transform: rotate(-45deg)
+
+.basket-menu
+    display: block
+    overflow: auto
+    min-height: 100%
+    display: flex
+    flex-direction: column
+    top: 0
+    right: 0
+    z-index: 10
+    height: 100%
+    color: #fff
+    width: 320px
+    position: fixed
+    box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.1)
+    background-color: $clr1
+    transform: translate(100%, 0px)
+    padding: 119px 62px 73px 35px
+
+.basket-menu.active
+    transform: translate(0px, 0px)
+    transition: .7s
+    
+
+.basket-menu.close
+    transform: translate(100%, 0px)
+    transition: .4s
+
+.receipe-cost
+    font-weight: 700
+    font-size: 18px
+    line-height: 21px
+    float: right
+
+.receipe-total
+    font-weight: 700
+    font-size: 18px
+    line-height: 21px
+
+.receipe-name
+    font-weight: 400
+    font-size: 16px
+    line-height: 19px
+
+.total-price
+    float: right
+
+.total-line
+    height: 1px
+    width: 100%
+    border: none
+    margin-bottom: 17px
+    background: #fff
+
+.products-count
+    color: #fff
+    font-weight: 500
